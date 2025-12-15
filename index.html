@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera Assistant - For Canon EOS Cameras</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            color: white;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        .hero p {
+            font-size: 1.3em;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+        .app-icon {
+            width: 150px;
+            height: 150px;
+            background: linear-gradient(135deg, #f97316 0%, #ec4899 50%, #8b5cf6 100%);
+            border-radius: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 80px;
+            margin: 0 auto 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+        .download-btn {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 18px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        .download-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+        .features {
+            background: white;
+            padding: 60px 20px;
+        }
+        .features h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 40px;
+            font-size: 2em;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .feature-card {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .feature-card .emoji {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+        .feature-card h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        .feature-card p {
+            color: #666;
+        }
+        .cameras {
+            background: linear-gradient(135deg, #f97316 0%, #ec4899 100%);
+            padding: 60px 20px;
+            color: white;
+            text-align: center;
+        }
+        .cameras h2 {
+            margin-bottom: 30px;
+            font-size: 2em;
+        }
+        .camera-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .camera-tag {
+            background: rgba(255,255,255,0.2);
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: 500;
+        }
+        .links {
+            background: #333;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            padding: 10px 20px;
+            border: 2px solid white;
+            border-radius: 25px;
+            display: inline-block;
+            margin-bottom: 10px;
+            transition: background 0.3s;
+        }
+        .links a:hover {
+            background: white;
+            color: #333;
+        }
+        .footer {
+            background: #222;
+            color: #888;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        .footer p {
+            margin-bottom: 10px;
+        }
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+            .app-icon {
+                width: 120px;
+                height: 120px;
+                font-size: 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="app-icon">📷</div>
+        <h1>Camera Assistant</h1>
+        <p>Your intelligent companion for Canon EOS cameras 📷🎬</p>
+        <a href="https://apps.apple.com/app/camera-assistant/id0000000000" class="download-btn">
+            Download on App Store
+        </a>
+    </div>
+
+    <div class="features">
+        <h2>✨ Features</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="emoji">📷</div>
+                <h3>LCD Analysis</h3>
+                <p>Take a photo of your camera's LCD screen and get instant AI-powered help</p>
+            </div>
+            <div class="feature-card">
+                <div class="emoji">🤖</div>
+                <h3>AI Assistant</h3>
+                <p>Ask questions in natural language and get detailed, contextual answers</p>
+            </div>
+            <div class="feature-card">
+                <div class="emoji">🔍</div>
+                <h3>Smart Search</h3>
+                <p>Search through 194 enriched LCD screen references</p>
+            </div>
+            <div class="feature-card">
+                <div class="emoji">🥽</div>
+                <h3>Meta Ray-Ban</h3>
+                <p>Connect your smart glasses for hands-free photo capture</p>
+            </div>
+            <div class="feature-card">
+                <div class="emoji">⭐</div>
+                <h3>Favorites</h3>
+                <p>Save your most useful answers for quick access</p>
+            </div>
+            <div class="feature-card">
+                <div class="emoji">🌍</div>
+                <h3>Bilingual</h3>
+                <p>Full French and English support</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="cameras">
+        <h2>🎬 Compatible with 33 Canon Cameras</h2>
+        <div class="camera-list">
+            <span class="camera-tag">EOS R5 C ✓</span>
+            <span class="camera-tag">EOS R5</span>
+            <span class="camera-tag">EOS R5 Mark II</span>
+            <span class="camera-tag">EOS R6</span>
+            <span class="camera-tag">EOS R6 Mark II</span>
+            <span class="camera-tag">EOS R3</span>
+            <span class="camera-tag">EOS R1</span>
+            <span class="camera-tag">EOS R7</span>
+            <span class="camera-tag">EOS R10</span>
+            <span class="camera-tag">EOS C70</span>
+            <span class="camera-tag">EOS C400</span>
+            <span class="camera-tag">EOS C80</span>
+            <span class="camera-tag">5D Mark IV</span>
+            <span class="camera-tag">6D Mark II</span>
+            <span class="camera-tag">+ many more</span>
+        </div>
+    </div>
+
+    <div class="links">
+        <a href="privacy.html">🔒 Privacy Policy</a>
+        <a href="support.html">💬 Support</a>
+    </div>
+
+    <div class="footer">
+        <p>© 2024 Camera Assistant. All rights reserved.</p>
+        <p>Camera Assistant is not affiliated with Canon Inc.<br>Canon, EOS, and Canon product names are registered trademarks of Canon Inc.</p>
+    </div>
+</body>
+</html>
